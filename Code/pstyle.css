@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 95vh;
+    background: #f7f1eb;
+}
+
+.main{
+    height: auto;
+    width: 80vw;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+
+    background-image: linear-gradient(#aeaeae, #f7f1eb);
+}
+
+header {
+    background-color: #dcdcdc;
+    height: 10%;
+    width: 80vw;
+    z-index: 99;
+    position: fixed;
+}
+
+.header-image{
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    background-color: #858585;
+}
+
+.header-button-group {
+    background: none;
+    width: 80%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.header-button-group button {
+    background: none;
+    border: none;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: 0;
+    float: right;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 1s ease-out;
+    font-size: 1.3vw;
+    height: 100%;
+}
+
+.middle{
+    text-align: center;
+    font-family: Arial;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.middle p{
+    text-align: left;
+
+}
+
+.main-image{
+    background-color: #333333;
+    width: 100%;
+    height: 300px;
+
+
+
+}
+
+.lorem {
+    padding: 2% 0;
+}
+
+.products {
+    padding-bottom: 5%;
+}
+
+.product-image{
+    background-color: #333333;
+    height: 350px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.products div{
+    background-color: #dcdcdc;
+    width: 25%;
+    height: auto;
+    padding: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.product-1{
+    display: inline-block;
+}
+
+.product-2{
+    display: inline-block;
+}
+
+.product-3{
+    display: inline-block;
+}
+
+.product-title{
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: Arial;
+    padding-bottom: 1.5vh;
+}
+
+.product-text{
+    font-size: 1vw;
+}
+
+.image-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1vw;
+    padding-bottom: 2vh;
+    color: #858585;
+}
+
+button:hover {
+    background-color: grey;
+}

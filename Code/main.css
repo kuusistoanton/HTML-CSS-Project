@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: custom;
+    src: url("Subway Black.ttf")format('truetype');
+}
+
+body{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-image: radial-gradient(#30343F, transparent);
+}
+
+.main{
+    height: auto;
+    max-width: 85rem;
+    margin: auto;
+
+    color: white;
+    font-family: custom, sans-serif;
+
+}
+
+.middle {
+    width: 100%;
+}
+
+.header-bar {
+    background-image: linear-gradient(black, #30343F);
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 1;
+    border-bottom: 1px solid white;
+}
+
+.header-image{
+    margin: 0;
+    height: 100%;
+    width: 110px;
+    background-color: #30343F;
+    visibility: hidden;
+}
+
+ul {
+    display: flex;
+    background: transparent;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    justify-content: right;
+}
+
+li {
+    display: block;
+    width: 33%;
+    background-color: transparent;
+    transition: background-color 1s ease-out;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: black;
+}
+
+li a{
+    display: block;
+    line-height: 290%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    padding: 0 3%;
+}
+
+
+.home-page{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+.home-main-image{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.subjects-page{
+    margin-bottom: 10rem;
+    height: auto;
+}
+
+.subjects-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 8vw;
+}
+
+.contact-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    width: 100%;
+    margin: 2%;
+}
+
+.contact-text{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.dialogue{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+}
+.dialogue img{
+    width: 30%;
+    height: auto;
+    margin: 5%;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.words{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.words h2{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5%;
+}
+
+.comp-title {
+    text-align: center;
+    padding-top: 10%;
+    width: 100%;
+    font-size: 7vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.contact-title{
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.lorem {
+    max-width: 80%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.subjects-main-image{
+    border-radius: 4rem;
+}
+
+.subjects{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subject{
+    background-image: radial-gradient(#30343F 40%, transparent);
+    max-width: 90%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2%;
+}
+
+.image{
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.info{
+    width: 100%;
+}
+
+.subject p{
+    width: 100%;
+}
+
+.subject-title{
+    font-size: 2rem;
+
+    width: 100%;
+    text-wrap: balance;
+}
+
+.subject img{
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    margin: 4% 0;
+}
+
+
+.map{
+    width: 90%;
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 769px) {
+    .main{
+        width: 90%;
+    }
+
+    .subject{
+        width: 40%;
+        padding-top: 2%;
+        justify-content: center;
+        height:auto;
+    }
+    .image{
+        margin-right: 7%;
+    }
+
+    .info{
+        margin-top: 4%;
+        padding-right: 2%;
+        text-align: left;
+    }
+
+    .comp-title{
+        font-size: 7vw;
+        width: 90%;
+        background-image: radial-gradient(black, transparent);
+    }
+
+    .header-image{
+        visibility: visible;
+    }
+
+    ul{
+        width: calc(100% - 110px);
+    }
+
+    li{
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .words{
+        width: 40%;
+        height: 50%;
+        margin-top: 10%;
+    }
+
+    .words h2{
+        margin-bottom: 5%;
+    }
+
+
+
+
+    .subject{
+        max-width:25%;
+        justify-content: space-between;
+    }
+
+    .image{
+        width: 100%;
+        margin: 0;
+    }
+
+    .info{
+        margin-top: 4%;
+        padding-right: 2%;
+        text-align: left;
+    }
+    .subject div{
+        width: 100%;
+        padding-top: 2%;
+    }
+
+    .map{
+        width: 50%;
+        margin-right: 5%;
+    }
+    .contact-text{
+        width: 30%;
+    }
+
+    .contact-page{
+        justify-content: space-evenly;
+    }
+}
